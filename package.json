@@ -1,0 +1,22 @@
+{
+  "name": "react16-webpack4-babel7-template",
+  "version": "1.0.0",
+  "description": "template to start from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "andytham",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
