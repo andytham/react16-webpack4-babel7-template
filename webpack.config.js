@@ -12,12 +12,10 @@ const config = {
   },
   module: {
     rules: [
-
       {
         test: /\.js[x]?$/,
         loader: 'babel-loader',
         exclude: /node_modules/
-        
       },
       {
         test:/\.(s*)css$/,
