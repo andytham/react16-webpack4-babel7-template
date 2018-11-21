@@ -8,7 +8,7 @@ const config = {
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -43,8 +43,18 @@ const config = {
       }
     ]
   },
+  devServer: {
+    historyApiFallback: {
+      index: 'index.html',
+      open: false
+    }
+  },
   plugins: [
-		new MiniCssExtractPlugin('style.css'),
+		new MiniCssExtractPlugin(
+      {
+        filename: "style.css"
+      }
+    ),
 		new HtmlWebpackPlugin(
 			{
 				hash: false,
