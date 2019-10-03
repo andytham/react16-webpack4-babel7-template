@@ -16,7 +16,10 @@ const config = {
       {
         test: /\.js[x]?$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,        
+        resolve: {
+          extensions: ['.js', '.jsx'],
+        }
       },
       {
         test:/\.(s*)css$/,
